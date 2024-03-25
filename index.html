@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherFast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="static/images/favicon.png" type="image/x-icon">
+   
+</head>
+<body>
+    <header>
+        <div id="header-div">
+            <div id="logo">
+                <img id="logoImg" src="static/images/WeatherRealTime.png">
+            </div>
+            <div id="rightBlock">
+                <label id="toggle">
+                    <input type="checkbox">
+                    <span class="slider round">
+                        <img id="moon" src="static/images/moon.png">
+                        <img id="sun" src="static/images/sun.png">
+                    </span>
+                </label>
+                <img id="user" src="static/images/user.png">
+            </div>
+        </div>
+        <div id="separator"></div>
+    </header>
+    <div id="searchContainer">
+        <div id="searchBox">
+            <input type="text" id="searchInput" placeholder="Search a location...">
+            <button id="searchButton">
+                <img id="searchIcon" src="static/images/searchIcon.png" alt="search icon">
+            </button>
+        </div>
+    </div>
+    <div id="contentBody">
+        <div id="leftColumn">
+            <div id="locationdiv">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.291023450523!2d-73.65606397390366!3d45.53733864509881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918fad198a331%3A0x3a265f58873e1e3f!2sGroupe%20Trium%20Inc.!5e0!3m2!1sen!2sca!4v1708311973820!5m2!1sen!2sca" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div id="centerColumn">
+                <div id="weatherCard">
+                    <div id="top-div">
+                        <h2 id="city-title">--</h2>
+                        <h4 id="county-title">--</h4>
+                    </div>
+                    <div id="separator2"></div>
+                    <div id="temperature">
+                        <div id="temp-division">
+                            <div id="temp-state">
+                                <img id="temp-state-icon" src="static/images/logo.png">
+                                <div id="temp-state-text-container"><p id="temp-state-text">Cloudy</p></div>
+                            </div>
+                            <div id="temp-digit">
+                                <p id="temp-digit-text">--</p>
+                            </div>
+                            <div id="temp-unit">
+                                <p id="temp-unit-text">°C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="separator1"></div>
+                    <div id="tempDownDivision">
+                        <div id="tempColumn">
+                            <div id="temp-left-column">
+                                <div id="temp-left-icon-container">
+                                    <img id="temp-left-icon" src="static/images/humidity.png">
+                                    <div id="temp-left-humidity-container"><p id="temp-left-humidity">Humidity</p></div>
+                                </div>
+                                <div id="temp-left-text-container">
+                                    <p id="temp-left-text">36</p>
+                                </div>
+                            </div>
+                            <div id="temp-center-column">
+                                <div id="temp-center-icon-container">
+                                    <img id="temp-center-icon" src="static/images/pressure.png">
+                                    <div id="temp-center-pressure-container"><p id="temp-center-pressure">Pressure</p></div>
+                                </div>
+                                <div id="temp-center-text-container">
+                                    <p id="temp-center-text">1.033hPa</p>
+                                </div>
+                            </div>
+                            <div id="temp-right-column">
+                                <div id="temp-right-icon-container">
+                                    <img id="temp-right-icon" src="static/images/wind.png">
+                                    <div id="temp-right-wind-container"><p id="temp-right-wind">Wind</p></div>
+                                </div>
+                                <div id="temp-right-text-container">
+                                    <p id="temp-right-text">NW</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="rightColumn">
+            <div id="forcast">
+                <div id="forcast-container">
+                    <div id="forcast-title">
+                        <p id="forcast-title-text">7 days forcast</p>
+                    </div>
+                    <div id="sep1"></div>
+                    <div id="forcast-1">
+                        <div id="forcast-left-div">
+                            <div id="forcast-1-date"><p id="forcast-1-date-text">24/01/2024</p></div>
+                            <div id="forcast-1-state"><p id="forcast-1-state-text">Cloudy</p></div>
+                        </div>
+                        <div id="forcast-center-div">
+                            <div id="forcast-1-high"><p id="forcast-1-high-text">24</p></div>
+                            <div id="forcast-1-low"><p id="forcast-1-low-text">10</p></div>
+                        </div>
+                        <div id="forcast-right-div">
+                            <div id="forcast-1-icon">
+                                <img id="forcast-1-icon-img" src="static/images/cloudy.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sep2"></div>
+                    <div id="forcast-2">
+                        <div id="forcast-left-div">
+                            <div id="forcast-2-date"><p id="forcast-2-date-text">24/01/2024</p></div>
+                            <div id="forcast-2-state"><p id="forcast-2-state-text">Cloudy</p></div>
+                        </div>
+                        <div id="forcast-center-div">
+                            <div id="forcast-2-high"><p id="forcast-2-high-text">24</p></div>
+                            <div id="forcast-2-low"><p id="forcast-2-low-text">10</p></div>
+                        </div>
+                        <div id="forcast-right-div">
+                            <div id="forcast-2-icon">
+                                <img id="forcast-2-icon-img" src="static/images/cloudy.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sep3"></div>
+                    <div id="forcast-3">
+                        <div id="forcast-left-div">
+                            <div id="forcast-3-date"><p id="forcast-3-date-text">24/01/2024</p></div>
+                            <div id="forcast-3-state"><p id="forcast-3-state-text">Cloudy</p></div>
+                        </div>
+                        <div id="forcast-center-div">
+                            <div id="forcast-3-high"><p id="forcast-3-high-text">24</p></div>
+                            <div id="forcast-3-low"><p id="forcast-3-low-text">10</p></div>
+                        </div>
+                        <div id="forcast-right-div">
+                            <div id="forcast-3-icon">
+                                <img id="forcast-3-icon-img" src="static/images/cloudy.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sep4"></div>
+                    <div id="forcast-4">
+                        <div id="forcast-left-div">
+                            <div id="forcast-4-date"><p id="forcast-4-date-text">24/02/2024</p></div>
+                            <div id="forcast-4-state"><p id="forcast-4-state-text">Cloudy</p></div>
+                        </div>
+                        <div id="forcast-center-div">
+                            <div id="forcast-4-high"><p id="forcast-4-high-text">24</p></div>
+                            <div id="forcast-4-low"><p id="forcast-4-low-text">20</p></div>
+                        </div>
+                        <div id="forcast-right-div">
+                            <div id="forcast-4-icon">
+                                <img id="forcast-4-icon-img" src="static/images/cloudy.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sep5"></div>
+                    <div id="forcast-5">
+                        <div id="forcast-left-div">
+                            <div id="forcast-5-date"><p id="forcast-5-date-text">24/02/2024</p></div>
+                            <div id="forcast-5-state"><p id="forcast-5-state-text">Cloudy</p></div>
+                        </div>
+                        <div id="forcast-center-div">
+                            <div id="forcast-5-high"><p id="forcast-5-high-text">24</p></div>
+                            <div id="forcast-5-low"><p id="forcast-5-low-text">20</p></div>
+                        </div>
+                        <div id="forcast-right-div">
+                            <div id="forcast-5-icon">
+                                <img id="forcast-5-icon-img" src="static/images/cloudy.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sep6"></div>
+                    <div id="forcast-6">
+                        <div id="forcast-left-div">
+                            <div id="forcast-6-date"><p id="forcast-6-date-text">24/02/2024</p></div>
+                            <div id="forcast-6-state"><p id="forcast-6-state-text">Cloudy</p></div>
+                        </div>
+                        <div id="forcast-center-div">
+                            <div id="forcast-6-high"><p id="forcast-6-high-text">24</p></div>
+                            <div id="forcast-6-low"><p id="forcast-6-low-text">20</p></div>
+                        </div>
+                        <div id="forcast-right-div">
+                            <div id="forcast-6-icon">
+                                <img id="forcast-6-icon-img" src="static/images/cloudy.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sep7"></div>
+                    <div id="forcast-7">
+                        <div id="forcast-left-div">
+                            <div id="forcast-7-date"><p id="forcast-7-date-text">24/02/2024</p></div>
+                            <div id="forcast-7-state"><p id="forcast-7-state-text">Cloudy</p></div>
+                        </div>
+                        <div id="forcast-center-div">
+                            <div id="forcast-7-high"><p id="forcast-7-high-text">24</p></div>
+                            <div id="forcast-7-low"><p id="forcast-7-low-text">20</p></div>
+                        </div>
+                        <div id="forcast-right-div">
+                            <div id="forcast-7-icon">
+                                <img id="forcast-7-icon-img" src="static/images/cloudy.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* this part of code responsible for night mode when you toggle the night/day mode button
+         it changes class for all the elements and therefor they color and properties
+        */
+        const body = document.querySelector('body');
+        
+        const toggle = document.querySelector('input');
+        const headerDiv = document.getElementById('header-div');
+        const elementsToToggle = [
+        'user', 'logoImg', 'searchIcon','sep1','sep2','sep3','sep4','sep5','sep6','sep7', 'searchButton', 'searchInput',
+        'weatherCard','forcast-1-date-text', 'city-title','temp-left-humidity', 'county-title','temp-right-wind', 'separator','temp-center-pressure', 'separator2','temp-state-icon',
+        'temp-digit-text','forcast-2-date-text','forcast-4-date-text','forcast-3-date-text', 'temp-unit-text', 'temp-left-icon','forcast', 'temp-left-text',
+        'temp-center-icon','forcast-title-text','forcast-1-icon-img','forcast-2-icon-img','forcast-3-icon-img','forcast-1-state-text','forcast-2-state-text','locationdiv','separator','forcast-3-state-text', 'temp-center-text','temp-state-text', 'temp-right-icon', 'temp-right-text',
+        'separator1', 'temp-center-column'
+        ];
+
+        toggle.onclick = function () {
+        
+        toggle.classList.toggle('active');
+        body.classList.toggle('active');
+        separator.classList.toggle('active');
+        headerDiv.classList.toggle('active');
+
+        // Loop through the elements and toggle the 'active' class
+        elementsToToggle.forEach(elementId => {
+            const element = document.getElementById(elementId);
+            if (element) {
+            element.classList.toggle('active');
+            }
+        });
+        };
+        
+        function api(city){
+            return fetch("http://api.weatherapi.com/v1/forecast.json?key=f1fc9ccf61984736854224627242301&q="+city+"&days=4&aqi=no&alerts=no")
+            .then(res => res.json())
+            .then(data => {console.log(data)
+                let dataArray = data.forecast.forecastday;
+                let i = 1;
+                let forcastTemp = data.forecast.forecastday;
+                let sunrise = dataArray[0].astro.sunrise;
+                let sunset = dataArray[0].astro.sunset;
+                let currentTime = data.location.localtime.slice(11,16);
+                let dayNightt = dayNight(currentTime,sunrise,sunset);
+            
+                dataArray.forEach((day, dayIndex) => {
+                    
+                console.log(`Day ${dayIndex}: ${day.day.maxtemp_c}`);
+                const dateField = document.getElementById('forcast-'+i+'-date-text');
+                const highTemp = document.getElementById('forcast-'+i+'-high-text');
+                const lowTemp = document.getElementById('forcast-'+i+'-low-text');
+                const weatherState = document.getElementById('forcast-'+i+'-state-text');
+                const weatherIcon = document.getElementById('forcast-'+i+'-icon-img');
+                
+                weatherIcon.src = codeReader(day.day.condition.code);
+
+                weatherState.textContent = day.day.condition.text;
+                lowTemp.textContent = day.day.mintemp_c+'°C';
+                highTemp.textContent = day.day.maxtemp_c+'°C';
+                dateField.textContent = day.date;
+                   i++;
+    
+                });
+
+                const currentTempData = document.getElementById('temp-digit-text');
+                const currentHumidiy = document.getElementById('temp-left-text');
+                const city = document.getElementById('city-title');
+                const country = document.getElementById('county-title');
+                const CurrentPressure = document.getElementById('temp-center-text');
+                const CurrentWindDirection = document.getElementById('temp-right-text');
+                const CurrentWeatherIcon = document.getElementById('temp-state-icon');
+                const CurrentWeatherState = document.getElementById('temp-state-text');
+                CurrentWeatherState.textContent = data.current.condition.text;
+                CurrentWindDirection.textContent = data.current.wind_dir;
+                CurrentPressure.textContent = data.current.pressure_mb+"mBar";
+                city.textContent = data.location.name;
+                currentHumidiy.textContent = data.current.humidity+"%";
+                currentTempData.textContent = Math.floor(data.current.temp_c);
+                country.textContent = data.location.country;
+                CurrentWeatherIcon.src = codeReader(data.current.condition.code,dayNightt);
+
+                
+            });
+            
+        }  
+        
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+
+        let value;
+
+        function saveInput() {
+            value = searchInput.value;
+            return value;
+        }
+        searchButton.addEventListener('click',function(){
+            value = saveInput();
+            
+            api(value)
+            .then(temp => {
+                
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
+        });
+        searchInput.addEventListener('keyup',function(event){
+            if (event.key === 'Enter') {
+                value = saveInput();
+                
+                
+                api(value)
+                .then(temp => {
+                    
+                })
+                .catch(error => {
+                    console.error("Error fetching data:", error);
+                });
+            }
+        })
+
+        function codeReader(code,dayNight) {
+            let iconPath;
+            switch(code) {
+                    case 1000: iconPath = ["static/images/states/clear-day.svg","static/images/states/clear-night.svg"]
+                    break;
+                    case 1003: iconPath = ["static/images/states/overcast-day.svg","static/images/states/overcast-night.svg"]
+                    break;
+                    case 1147:
+                    case 1135:
+                    case 1030: iconPath = ["static/images/states/mist.svg","static/images/states/mist.svg"]
+                    break;
+                    case 1009:
+                    case 1006: iconPath = ["static/images/states/cloudy.svg","static/images/states/cloudy.svg"]
+                    break;
+                    case 1201:
+                    case 1198:
+                    case 1180:
+                    case 1183:
+                    case 1186:
+                    case 1189:
+                    case 1240:
+                    case 1243:
+                    case 1246:
+                    case 1273:
+                    case 1063: iconPath = ["static/images/states/partly-cloudy-day-rain.svg","static/images/states/partly-cloudy-night-rain.svg"]
+                    break;
+                    case 1279:
+                    case 1066: iconPath = ["static/images/states/partly-cloudy-day-snow.svg","static/images/states/partly-cloudy-night-snow.svg"]
+                    break;
+                    case 1150:
+                    case 1153:
+                    case 1168:
+                    case 1171:
+                    case 1072:
+                    case 1204:
+                    case 1207:
+                    case 1249:
+                    case 1252:
+                    case 1069: iconPath = ["static/images/states/overcast-sleet.svg","static/images/states/overcast-sleet.svg"]
+                    break;
+                    case 1087: iconPath = ["static/images/states/thunderstorms-day.svg","static/images/states/thunderstorms-night.svg"]
+                    break;
+                    case 1216:
+                    case 1219:
+                    case 1222:
+                    case 1225:
+                    case 1210:
+                    case 1117:
+                    case 1213:
+                    case 1255:
+                    case 1258:
+                    case 1282:
+                    case 1114: iconPath = ["static/images/states/snow.svg","static/images/states/snow.svg"]
+                    break;
+                    case 1192:
+                    case 1276:
+                    case 1195: iconPath =["static/images/states/rain.svg","static/images/states/rain.svg"]
+                    break;
+                    case 1261:
+                    case 1264:
+                    case 1237: iconPath = ["static/images/states/overcast-hail.svg","static/images/states/overcast-hail.svg"]
+                    break;
+                    default: iconPath = ["static/images/moon.png","static/images/moon.png"]
+                }
+                if (dayNight === "NIGHT") {
+                    return iconPath[1];
+                }
+                else {
+                    return iconPath[0];
+                }
+                
+        };
+        function dayNight(currentTime,sunrise,sunset) {
+ 
+                            console.log(sunrise);
+                            console.log(sunset);
+                            let riseSet = [sunrise,sunset];
+                            console.log("RISEEE "+riseSet);
+                            riseSet.forEach((Stime,timeIndex) => {
+                                
+                                let [time,modifier] = Stime.split(' ');
+                                let [hours, minutes] = time.split(':');
+                                if (modifier === 'PM' && hours !== '12') {
+                                    hours = String(Number(hours)+12);
+                                }
+                                if (modifier === 'AM' && hours === '12') {
+                                    hours = '00';
+                                }
+                                Stime = hours+':'+minutes;
+                                
+                                riseSet[timeIndex] = Stime;
+                                console.log('YYY '+Stime);
+                                
+                            }) 
+                            if (currentTime >= riseSet[0] && currentTime < riseSet[1]) {
+                                return "DAY";
+                                console.log("DAY");
+                            }
+                            else {
+                                return "NIGHT";
+                                console.log("NIGHT");
+                            }
+                            
+        };
+    </script>
+</body>
+</html>
