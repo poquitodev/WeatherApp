@@ -184,7 +184,7 @@ body.active {
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  
+  background-color: none;
 }
 
 #searchInput {
@@ -254,12 +254,13 @@ body.active {
   background-color: #1b1b1b;
 }
 #contentBody {
+  margin-left: 5%;
+  margin-right: 5%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: none;
-   
-  width: 100%;
-  height: 1000px;
+  width: auto;
+  height: 400px;
 }
 #centerColumn {
    
@@ -278,12 +279,13 @@ body.active {
   padding-right: 5px;
 }
 #weatherCard {
-
+  min-width: 300px;
   border-radius: 20px;
   border: 2px solid #00ff9f;
   width: 100%;
   height: 350px;
-  max-width: 500px;
+  margin-left: 5%;
+  margin-right: 5%;
   justify-content: center;
   align-items: center;
   box-shadow: 5px 5px 0px #1b1b1b;
@@ -369,7 +371,7 @@ body.active {
 #tempDownDivision {
   width: 100%;
   height: 25%;
-  margin-top: 2%;
+  margin-top: 0%;
   display: block;
   justify-content: center;
   align-items: center;
@@ -385,14 +387,16 @@ body.active {
 }
 #temp-left-column {
   display: block;
+  max-height: 100%;
+  height: 100%;
 }
 #temp-left-icon-container {
   display: flex;
   align-items: center;
-  
   margin-left: 6%;
   height: 25px;
   width: 100%;
+  margin-top: 3%;
 }
 
 #temp-left-icon {
@@ -423,7 +427,7 @@ body.active {
 #temp-left-text-container {
   width: 100%;
   position: relative;
-  top: 10%;
+  top: 5%;
   
 }
 #temp-center-pressure-container {
@@ -456,6 +460,7 @@ body.active {
   display: block;
   border-right: 2px solid #00ff9f;
   border-left: 2px solid #00ff9f;
+  height: 100%;
 }
 #temp-center-column.active {
   border-right: 2px solid #FF2AFD;
@@ -467,6 +472,7 @@ body.active {
   margin-left: 6%;
   height: 25px;
   width: 100%;
+  margin-top: 3%;
 }
 #temp-center-icon {
   height: 100%;
@@ -476,7 +482,7 @@ body.active {
 }
 #temp-center-text-container {
   position: relative;
-  top: 15%;
+  top: 10%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -494,6 +500,7 @@ body.active {
 }
 #temp-right-column {
   display: block;
+  height: 100%;
 }
 #temp-right-icon-container {
   display: flex;
@@ -501,6 +508,7 @@ body.active {
   margin-left: 6%;
   height: 25px;
   width: 100%;
+  margin-top: 3%;
 }
 #temp-right-wind-container {
   display: flex;
@@ -529,7 +537,7 @@ body.active {
   
   width: 100%;
   position: relative;
-  top: 10%;
+  top: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1253,4 +1261,42 @@ b {
 #locationdiv.active{
   border: 2px solid #FF2AFD;
   box-shadow: 5px 5px 0px white;
+}
+#hourlyforcast {
+  border-radius: 20px;
+  border: 2px solid #00ff9f;
+  width: 40%;
+  height: 100px;
+  margin-left: 30%;
+  margin-right: 30%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 0px #1b1b1b;
+  overflow-x: auto;
+  scrollbar-width: 100%;
+  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+#hourslist {
+  
+}
+.hours-forcast-header {
+  font-family: 'figtree';
+}
+.hours-forcast-data {
+  font-family: 'figtree';
+}
+#hourlyforcast::-webkit-scrollbar {
+  width: 100%;
+  height: 10px;
+}
+#hourlyforcast::-webkit-scrollbar-track {
+  background-color: gray;
+  border-radius: 5px;
+}
+#hourlyforcast::-webkit-scrollbar-thumb {
+  background: #00ff9f;
+  border-radius: 5px;
 }
